@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.mycompany.dvdStore.entity.Movie;
 import com.mycompany.dvdStore.repository.MovieRepositoryInterface;
 
-@Repository
+//@Repository
 public class MemoryMovieRepository implements MovieRepositoryInterface {
 	public static List<Movie> movies = new ArrayList<>();
 	
