@@ -1,8 +1,6 @@
 com\mycompany\dvdStore\entity\Movie.class
-com\mycompany\dvdStore\repository\memory\MemoryMovieRepository.class
-com\mycompany\dvdStore\App.class
 com\mycompany\dvdStore\repository\MovieRepositoryInterface.class
+com\mycompany\dvdStore\repository\memory\MemoryMovieRepository.class
 com\mycompany\dvdStore\service\MovieServiceInterface.class
 com\mycompany\dvdStore\repository\file\FileMovieRepository.class
-com\mycompany\dvdStore\controller\MovieController.class
 com\mycompany\dvdStore\service\DefaultMovieService.class

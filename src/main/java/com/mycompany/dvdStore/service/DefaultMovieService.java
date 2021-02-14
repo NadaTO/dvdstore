@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.mycompany.dvdStore.entity.Movie;
 import com.mycompany.dvdStore.repository.MovieRepositoryInterface;
+import java.util.List;
 
 @Service
 public class DefaultMovieService implements MovieServiceInterface {
@@ -22,6 +23,16 @@ public class DefaultMovieService implements MovieServiceInterface {
 
 	public void registerMovie(Movie movie) {
 		movieRepository.add(movie);
+	}
+
+	@Override
+	public List<Movie> getMovieList(){
+		return movieRepository.list();
+	}
+
+	@Override
+	public Movie getMovieById(long id){
+		return movieRepository.getById(id);
 	}
 
 }
